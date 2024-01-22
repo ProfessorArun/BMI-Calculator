@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="styling/styling.css">
+    <link rel="stylesheet" href="styling.css">
 </head>
 <body>
     <div class="out">
@@ -16,14 +16,14 @@
             <div id="output"></div>
         </div>
     </div>
-<script src="dynamic/dynamic.js"></script>
+<script src="dynamic.js"></script>
     function calculateBMI(){
         let weight=Number(document.getElementById("input2").value)
         let height=Number(document.getElementById("input1").value)
         let bmi=(weight/((height**2)))
         document.getElementById("output").innerHTML=bmi+" kg/m<sup>2</sup>"
     }
-</script>
+
 
 </body>
 </html>
